@@ -10,7 +10,7 @@ Open VSCode with AOSP full codebases or partial projects to use the extension.
 
 * Windows
 
-> ![Windows Configuration](testing/config_and_check2.gif)
+> ![Windows Configuration](images/config.jpg)
 
 * Linux
 
@@ -19,26 +19,21 @@ Open VSCode with AOSP full codebases or partial projects to use the extension.
 
 ### Repo info
 
-![repo info](testing/repo_info2.gif)
+![repo info](images/repo_info.jpg)
 
 ### Repo status
 
 Partial & Full project refresh
 
-![repo status](testing/status_partial_n_all2.gif)
+![repo status](images/repo_status.jpg)
 
-Realtime refresh
+### Repo upload
 
-![repo status instant](testing/realtime_status2.gif)
-
-### Repo upload, Repo start
-
-![repo info](testing/multiple_upload2.gif)
+![repo info](images/repo_upload.jpg)
 
 ### Repo sync
 
-![repo sync](testing/get_code_merged2.gif)
-
+![repo sync](images/repo_sync.jpg)
 
 ## Known Issues
 
