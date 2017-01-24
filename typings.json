@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "node-uuid": "registry:npm/node-uuid#1.4.7+20160723033700",
+    "rewire": "registry:npm/rewire#2.5.1+20161004215232"
+  },
+  "dependencies": {
+    "request": "registry:npm/request#2.69.0+20160428223725",
+    "rwlock": "registry:npm/rwlock#5.0.0+20160420233059",
+    "strip-json-comments": "registry:npm/strip-json-comments#2.0.0+20160723033700"
+  }
+}

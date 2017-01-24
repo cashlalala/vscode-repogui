@@ -1,0 +1,11 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/CaselIT/typings-rwlock/98f6480d8f7b185d4e1afe099725ee6b81699806/typings.json",
+    "raw": "registry:npm/rwlock#5.0.0+20160420233059",
+    "main": "lock.d.ts",
+    "version": "5.0.0",
+    "name": "rwlock",
+    "type": "typings"
+  }
+}

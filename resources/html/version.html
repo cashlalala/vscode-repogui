@@ -1,0 +1,39 @@
+<body>
+    <div align="right" id="refresh">
+        <a href="${refreshCmd}" class="btn btn-default btn-md">
+            <i class="fa fa-refresh" aria-hidden="true" title="Refresh codebase status"></i>
+        </a>
+    </div>
+
+    <div class="center_div">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="branch" class="control-label col-md-2">Refs (Branch/Tag):</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="branch" data-placeholder="Input the branch/tag">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="new_code" class="control-label col-md-2"></label>
+                <div class="col-md-10">
+                    <div class="checkbox" id="new_code">
+                        <label><input type="checkbox"  id="new_code_chk" value="">Get code at new path</label>
+                    </div>
+                </div>
+            </div>
+            <div id="path_mapping_grp">
+                <div class="form-group">
+                    <label for="new_path" class="control-label col-md-2">New Linux Path:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="new_path">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <a id="getCodeBtn" class="btn btn-primary disabled">Start</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

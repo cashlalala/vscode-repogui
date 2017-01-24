@@ -1,0 +1,10 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/cantide5ga/typed-rewire/969d1d67df09f03b460406d6db271bb6e1452f62/typings.json",
+    "raw": "registry:npm/rewire#2.5.1+20161004215232",
+    "main": "index.d.ts",
+    "name": "rewire",
+    "type": "typings"
+  }
+}
