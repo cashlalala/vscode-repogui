@@ -1,138 +1,135 @@
 {
-  "name": "repotool-gui",
-  "displayName": "Repotool GUI",
-  "description": "A GUI integrated with repotool",
-  "version": "0.1.0",
-  "publisher": "cashchang",
-  "license": "MIT",
-  "galleryBanner": {
-    "color": "#0000FF",
-    "theme": "dark"
-  },
-  "engines": {
-    "vscode": "^1.5.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "*"
-  ],
-  "main": "./out/src/extension",
-  "contributes": {
-    "menus": {
-      "explorer/context": [
-        {
-          "command": "repotool-cmd:showinfo",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:startbranch",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:showstatus",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:getcode-gui",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:config",
-          "group": "repotool-cmd"
-        }
-      ],
-      "editor/context": [
-        {
-          "command": "repotool-cmd:showinfo",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:startbranch",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:showstatus",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:getcode-gui",
-          "group": "repotool-cmd"
-        },
-        {
-          "command": "repotool-cmd:config",
-          "group": "repotool-cmd"
-        }
-      ]
+    "name": "repotool-gui",
+    "displayName": "Repotool GUI",
+    "description": "A GUI integrated with repotool",
+    "version": "0.1.0",
+    "publisher": "cashlalala",
+    "license": "MIT",
+    "galleryBanner": {
+        "color": "#0000FF",
+        "theme": "dark"
     },
-    "commands": [
-      {
-        "command": "repotool-cmd:startbranch",
-        "title": "RepoToolGui: Create a local branch for repo tool"
-      },
-      {
-        "command": "repotool-cmd:showstatus",
-        "title": "RepoToolGui: Show current codebase status"
-      },
-      {
-        "command": "repotool-cmd:showinfo",
-        "title": "RepoToolGui: Show current codebase version information"
-      },
-      {
-        "command": "repotool-cmd:ciservice",
-        "title": "RepoToolGui: Trigger CI service"
-      },
-      {
-        "command": "repotool-cmd:config",
-        "title": "RepoToolGui: Configure plugin"
-      },
-      {
-        "command": "repotool-cmd:getcode-gui",
-        "title": "RepoToolGui: Switch version"
-      }
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Other"
     ],
-    "configuration": {
-      "type": "object",
-      "title": "Repotool configuration",
-      "properties": {
-        "repotool.debug": {
-          "type": "number",
-          "default": 0,
-          "description": "Set 1 to enable debug output"
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "menus": {
+            "explorer/context": [{
+                    "command": "repotool-cmd:showinfo",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:startbranch",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:showstatus",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:getcode-gui",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:config",
+                    "group": "repotool-cmd"
+                }
+            ],
+            "editor/context": [{
+                    "command": "repotool-cmd:showinfo",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:startbranch",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:showstatus",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:getcode-gui",
+                    "group": "repotool-cmd"
+                },
+                {
+                    "command": "repotool-cmd:config",
+                    "group": "repotool-cmd"
+                }
+            ]
+        },
+        "commands": [{
+                "command": "repotool-cmd:startbranch",
+                "title": "RepoToolGui: Create a local branch for repo tool"
+            },
+            {
+                "command": "repotool-cmd:showstatus",
+                "title": "RepoToolGui: Show current codebase status"
+            },
+            {
+                "command": "repotool-cmd:showinfo",
+                "title": "RepoToolGui: Show current codebase version information"
+            },
+            {
+                "command": "repotool-cmd:ciservice",
+                "title": "RepoToolGui: Trigger CI service"
+            },
+            {
+                "command": "repotool-cmd:config",
+                "title": "RepoToolGui: Configure plugin"
+            },
+            {
+                "command": "repotool-cmd:getcode-gui",
+                "title": "RepoToolGui: Switch version"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Repotool configuration",
+            "properties": {
+                "repotool.debug": {
+                    "type": "number",
+                    "default": 0,
+                    "description": "Set 1 to enable debug output"
+                }
+            }
         }
-      }
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "mocha"
+    },
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "jquery": "^3.1.1",
+        "jquery-bootgrid": "^1.3.1",
+        "jquery-ui-dist": "^1.12.1",
+        "masonry-layout": "^4.1.1",
+        "named-js-regexp": "^1.3.1",
+        "node-json2html": "^1.1.1",
+        "node-uuid": "^1.4.7",
+        "paralleljs": "^0.2.1",
+        "request": "^2.79.0",
+        "ssh2": "^0.5.2",
+        "strip-json-comments": "^2.0.1"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.32",
+        "@types/node": "^6.0.40",
+        "@types/ssh2": "^0.5.33",
+        "mocha": "^2.3.3",
+        "named-js-regexp": "^1.3.1",
+        "node-uuid": "^1.4.7",
+        "ssh2": "^0.5.2",
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.3"
     }
-  },
-  "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "mocha"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1",
-    "jquery-bootgrid": "^1.3.1",
-    "jquery-ui-dist": "^1.12.1",
-    "masonry-layout": "^4.1.1",
-    "named-js-regexp": "^1.3.1",
-    "node-json2html": "^1.1.1",
-    "node-uuid": "^1.4.7",
-    "paralleljs": "^0.2.1",
-    "request": "^2.79.0",
-    "ssh2": "^0.5.2",
-    "strip-json-comments": "^2.0.1"
-  },
-  "devDependencies": {
-    "@types/mocha": "^2.2.32",
-    "@types/node": "^6.0.40",
-    "@types/ssh2": "^0.5.33",
-    "mocha": "^2.3.3",
-    "named-js-regexp": "^1.3.1",
-    "node-uuid": "^1.4.7",
-    "ssh2": "^0.5.2",
-    "typescript": "^2.0.3",
-    "vscode": "^1.0.3"
-  }
 }
