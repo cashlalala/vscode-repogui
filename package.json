@@ -5,6 +5,7 @@
     "version": "0.1.0",
     "publisher": "cashlalala",
     "license": "MIT",
+    "icon": "images/android.png",
     "galleryBanner": {
         "color": "#0000FF",
         "theme": "dark"
@@ -12,9 +13,19 @@
     "engines": {
         "vscode": "^1.5.0"
     },
+    "keywords": [
+        "aosp", "android", "git", "repotool", "repo"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cashlalala/vscode-repogui.git"
+    },
     "categories": [
         "Other"
     ],
+    "bugs": {
+        "url": "https://github.com/cashlalala/vscode-repogui/issues"
+    },
     "activationEvents": [
         "*"
     ],

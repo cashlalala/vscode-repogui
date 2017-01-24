@@ -37,7 +37,7 @@ Partial & Full project refresh
 
 ## Known Issues
 
-welcome to report : cash924n@gmail.com
+welcome to report : https://github.com/cashlalala/vscode-repogui/issues
 
 ## Release Notes
 
