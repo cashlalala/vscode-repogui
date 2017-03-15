@@ -32,10 +32,8 @@ export function renderMasonryRepoStatus(repoStatusMap: Map<string, Object>,
 
         repoStatus['changes'].forEach((change, idx) => {
             let single: string = `
-                        <li>
-                            <a class="ui-button ui-widget ui-corner-all" href="${fileCmd}">
-                                ${change['file']} : ${change['status']}
-                            </a>
+                        <li class="list-group-item">
+                                ${change['file']} <span class="badge"> ${change['status']}</span>
                         </li>`;
             width = (width > single.length) ? width : ((change['file'] + change['status']).length + 10);
             filesHtml += single;
@@ -63,7 +61,7 @@ export function renderMasonryRepoStatus(repoStatusMap: Map<string, Object>,
                                         <label />
                                     </div>` : ""}
                                 <span>${repoStatus["branch"]}</span>
-                                <ul>${filesHtml}</ul>
+                                <ul class="list-group" >${filesHtml}</ul>
                                 <div class="btn-group pull-right btn-grp-bottom-align" >
                                 ${ (stage) ? `
                                     <a class="btn btn-default btn-sm " >
