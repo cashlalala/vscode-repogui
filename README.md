@@ -37,9 +37,13 @@ Partial & Full project refresh
 
 ## Known Issues
 
-welcome to report : https://github.com/cashlalala/vscode-repogui/issues
+welcome to report
 
 ## Release Notes
+
+### 0.1.1
+
+status ui refinement, 
 
 ### 0.1.0
 
