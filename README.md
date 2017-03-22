@@ -41,9 +41,13 @@ welcome to report
 
 ## Release Notes
 
+### 0.1.2
+
+fix the release defect
+
 ### 0.1.1
 
-status ui refinement, 
+status ui refinement
 
 ### 0.1.0
 

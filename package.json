@@ -2,7 +2,7 @@
     "name": "repotool-gui",
     "displayName": "Repotool GUI",
     "description": "A GUI integrated with repotool",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "cashlalala",
     "license": "MIT",
     "icon": "images/android.png",
